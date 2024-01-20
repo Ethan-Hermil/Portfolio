@@ -1,300 +1,219 @@
 @font-face {
-  font-family: Consolas;
-  src: url(Font/CONSOLA.TTF);
+	font-family: Consolas;
+	src: url(Font/CONSOLA.TTF);
 }
 
 @font-face {
-  font-family: ConsolasBold;
-  src: url(Font/CONSOLAB.TTF);
+	font-family: ConsolasBold;
+	src: url(Font/CONSOLAB.TTF);
 }
 
-html,
+:root {
+	--border-color: black;
+	--nav-bg-color: rgb(197, 197, 197);
+	--bg-color: #e9e9e9;
+	--footer-bg-color: rgb(141, 141, 141);
+	--nav-button-bg-color: rgb(32, 88, 145);
+	--nav-button-bg-hover-color: rgb(14, 61, 109);
+	--box-border-color: grey;
+	--project-bg-color: #cbe3f6;
+	--project-button-bg-color: lightgray;
+	--project-button-hover-bg-color: grey;
+}
+
+body,
+html {
+	min-height: 100vh;
+
+	font-family: Consolas;
+	/*font-family: system-ui;*/
+	cursor: default;
+	background-color: #2d3142;
+}
+
 body {
-  height: 100%;
-  padding-top: 0;
-  margin: 0;
-  font-family: Consolas;
+	display: flex;
+	flex-direction: column;
 }
 
-body {
-  margin: 0 8px;
-  background-color: #003b6f;
-  color: black;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-}
-
-main {
-  display: flex;
-  gap: 10px;
-  flex-grow: 1;
-}
-
-h1 {
-  font-family: ConsolasBold;
-  font-size: xx-large;
-  padding-left: 30px;
-}
-
-hr {
-  border: none;
-  border-top: dashed 2px darkslategray;
-  margin: 10px 20px;
-}
-
-body>a>img {
-  position: fixed;
-  bottom: 10px;
-  left: 10px;
-  border-radius: 100%;
-  height: 25px;
-  width: 25px;
-  opacity: 75%;
-  border: solid rgb(17, 17, 17) 2px;
-}
-
-header a:link {
-  color: darkcyan;
-  text-decoration: none;
-}
-
-header a:visited {
-  color: darkcyan;
-}
-
-header a:hover {
-  color: white;
-}
-
-header a:active {
-  color: white;
-}
-
-header a {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  padding-top: 22px;
-  border-radius: 15px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-
-  transition-property: padding, border-radius, color;
-  transition-duration: 0.25s;
-}
-
-header a:hover {
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.actif:hover {
-  padding-bottom: 22px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-.actif {
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  padding-bottom: 22px;
-  border-radius: 15px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-}
-
-header {
-  display: flex;
-}
-
-header nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: rgba(50, 50, 50, 0.5);
-  position: relative;
-}
-
-header nav div {
-  background: rgba(255, 215, 0, 0.15);
-  color: white;
-  padding-left: 10px;
-  padding-right: 5px;
-  font-size: 10px;
-  position: absolute;
-  bottom: 0px;
-  right: 0px;
-  border-bottom-right-radius: 3px;
-  border-top-left-radius: 50px;
-}
-
-header ul {
-  width: 75%;
-  margin: 0;
-  padding: 15px;
-  padding-left: 5%;
-  list-style: none;
-  display: flex;
-  gap: 10%;
-}
-
-header li,
-footer li {
-  margin: 5px;
-}
-
-header aside {
-  display: flex;
-  position: relative;
-  padding: 3px;
-  margin-left: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0px 0px 5px black;
-}
-
-header aside img {
-  align-self: center;
-  height: 50px;
-  width: 50px;
-  object-fit: cover;
-  object-position: top;
-}
-
-header aside div {
-  display: none;
-  position: absolute;
-  right: -2px;
-  top: -2px;
-  padding-left: 2px;
-  font-size: 53%;
-  width: 500%;
-  height: 100%;
-  background-color: #D5CABC;
-  border: 2px solid black;
-  box-shadow: inset 0px 0px 5px black;
-  border-radius: 5px;
-}
-
-header aside:hover div {
-  display: block;
-}
-
-header aside li,
-header aside ul,
-header aside h2 {
-  margin: 0;
-  padding-top: 0;
-}
-
-main aside {
-  width: 15%;
-  border: 2px solid black;
-  border-radius: 5px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0px 0px 5px black;
-}
-
-main>article>section {
-  padding-right: 10%;
-}
-
-aside ul {
-  list-style: circle;
-  flex-direction: column;
-}
-
-aside li {
-  margin-bottom: 10px;
-}
-
-aside figure {
-  margin: 5%;
-}
-
-aside img {
-  width: 100%;
-  height: 14vw;
-  border-radius: 25%;
-  object-fit: cover;
-  object-position: top;
-}
-
-main>article {
-  flex-grow: 2;
-  padding-left: 5px;
-  padding-right: 5px;
-  border: 2px solid black;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: inset 0px 0px 5px black;
-}
-
-main>article>section {
-  margin-left: 5px;
-  padding-left: 5px;
-  border-left: 2px dotted darkslategray;
-}
-
-section>article {
-  margin-left: 10px;
-}
-
-article section li {
-  list-style: symbols(cyclic "➥");
-}
-
-footer {
-  color: white;
-  padding: 5px;
-  border: 2px solid black;
-  border-bottom: none;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background: rgba(25, 25, 25, 0.90);
-}
-
-footer ul {
-  list-style: none;
-  display: flex;
-}
-
-footer {
-  text-align: right;
-}
-
-footer a {
-  font-size: 80%;
-  color: darkslategray;
-}
-
-
-
-
-
-main a {
-  background-color: rgba(209, 209, 209, 0.75);
-  padding: 5px 5px 3px 5px;
-  border-radius: 7px;
-  text-decoration: none;
-  color: black;
-  box-shadow: inset 0 0 0 white;
-
-  transition: box-shadow 0.35s;
-}
-
-main a:hover {
-  box-shadow: inset 0 0 50px white;
-}
-
-main a:visited {
-  color: black;
+h1,
+h2,
+h3 {
+	font-family: ConsolasBold;
 }
 
 h3 {
-  margin: 30px 0 0 0;
+	margin-bottom: 0.25em;
+}
+
+h3+p {
+	margin-top: 0;
+}
+
+header,
+main,
+footer {
+	border: 2px solid var(--border-color);
+	background-color: var(--bg-color);
+	border-radius: 1em;
+}
+
+/*------Header------*/
+
+header {
+	display: flex;
+	background-color: var(--nav-bg-color);
+}
+
+header>aside {
+	display: flex;
+	gap: 30px;
+	padding: 10px;
+	border-radius: 7px 0 0 7px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	padding: 10px;
+	border-left: 2px solid var(--border-color);
+	flex-shrink: 2;
+}
+
+nav>a {
+	border-radius: 1.75em 0.5em;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 17px 9px;
+	background-color: var(--nav-button-bg-color);
+	border: 2px solid var(--border-color);
+	transition: box-shadow, 0.5s;
+	box-shadow: inset 0 0 var(--nav-button-bg-hover-color), inset 0 0 var(--nav-button-bg-hover-color);
+}
+
+nav>a:hover {
+	background-color: var(--nav-button-bg-hover-color);
+	transition: box-shadow, 1.5s;
+	box-shadow: inset 0 -10em var(--nav-button-bg-hover-color), inset 0 10em var(--nav-button-bg-hover-color);
+
+}
+
+img {
+	border-radius: 1.3em / 2em;
+	width: 100px;
+	height: 150px;
+	object-fit: cover;
+	border: 2px solid var(--border-color);
+}
+
+/*------Corps------*/
+
+main {
+	flex-grow: 3;
+	padding: 10px 20px;
+	margin: 7px 0;
+}
+
+h2 {
+	margin: 10px 0 0 0;
+}
+
+.projet {
+	margin: 13px 0;
+	background-color: var(--project-bg-color);
+	border-radius: 11px;
+	border: 2px solid var(--border-color);
+	padding: 7px 13px 19px 13px;
+}
+
+.projet>h3 {
+	display: inline;
+	font-size: 150%;
+}
+
+.button {
+	margin-right: 15px;
+	cursor: pointer;
+	padding: 7px;
+}
+
+.button::before {
+	content: '▼';
+}
+
+.check:checked+.button::before {
+	content: '▲';
+}
+
+.check:checked~div {
+	display: block;
+}
+
+.check {
+	display: none;
+}
+
+.projectContent {
+	display: none;
+}
+
+.box {
+	padding: 0.75em 2.25em;
+	border-top: 2px dotted var(--box-border-color);
+	border-bottom: 2px dotted var(--box-border-color);
+	right: 50%;
+	margin-bottom: 2.5em;
+}
+
+.projectButton {
+	margin: 7px;
+	padding: 7px;
+	background-color: var(--project-button-bg-color);
+	text-decoration: none;
+	color: black;
+	border: 1px solid var(--border-color);
+	border-radius: 0.25em 1em;
+
+	transition: box-shadow, 0.25s;
+	box-shadow: inset 0 0 var(--project-button-hover-bg-color), inset 0 0 var(--project-button-hover-bg-color);
+}
+
+.projectButton:hover {
+	transition: box-shadow, 0.75s;
+	box-shadow: inset 0 -10em var(--project-button-hover-bg-color), inset 0 10em var(--project-button-hover-bg-color);
+
+}
+
+/*------Footer------*/
+
+footer {
+	background-color: var(--footer-bg-color);
+	padding: 5px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------En développement------*/
+
+.WorkInProgress {
+	text-align: center;
+	font-size: 200%;
+	font-weight: bold;
+	padding: 10px;
+	border: 5px dashed black;
+	background-color: yellow;
 }
