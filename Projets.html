@@ -6,6 +6,7 @@
 	<title>Ethan Hermil's portfolio</title>
 	<link rel="stylesheet" href="portfolio.css">
 	<link rel="shortcut icon" href="img/favicon.png">
+	<script src="jquery.min.js"></script>
 </head>
 
 <body>
@@ -29,6 +30,7 @@
 	<main>
 		<h1>Mes Projets</h1>
 
+		
 		<h2>Projets personnels</h2>
 		<div class="box">
 			<section class="projet">
@@ -60,7 +62,14 @@
 				<h3>Projet de classification automatique de dépêches en Java</h3>
 				<hr>
 				<div class="projectContent">
-					<p>Pas encore rédigé ...</p>
+					<h4>(2023)</h4>
+					<p>Ce projet consistais en binômes, de créer un programme Java permettant de trier de courtes 
+						dépècges selon certaines catégories. Pour celà, nous avons du créer des listes de mots correspondant 
+						à chaque catégorie et assigner un score (poid) à chaque mot dans la catégorie en fonction de son 
+						appartenance et à sa précision sur le sujet. Par exemple, dans la catégorie science, le mot 'atome' 
+						aurais eu un poid fort contrairement au mot 'je'. Nous devions le faire premièrement à la main, puis 
+						nous devions automatiser le processus de tri des dépèches et d'ajustement des valeures pour avoir un 
+						taux de réussite le plus haut possible</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
 			</section>
@@ -71,7 +80,11 @@
 				<h3>Installation d'un poste de travail sous linux</h3>
 				<hr>
 				<div class="projectContent">
-					<p>Pas encore rédigé ...</p>
+					<h4>(2022)</h4>
+					<p>Durant ce court projet, nous devions simplement installer Debian sur une machine virtuelle ainsi que 
+						tous les outils nescessaires pour développer en Java. Ce projet étais ma première installation d'un 
+						poste de travail sous linux tout en faisant une carte mentale récapitulant le processus d'installation 
+						pour quelqu'un qui ne s'y connait pas. Mais ce n'est pas ma dernière (bien au contraire)</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
 			</section>
@@ -82,7 +95,12 @@
 				<h3>Création d'une base de données PostgreSQL</h3>
 				<hr>
 				<div class="projectContent">
-					<p>Pas encore rédigé ...</p>
+					<h4>(2022)</h4>
+					<p>Nous devions en binômes, modéliser et créer une base de données PostgreSQL sur le thème de naufrahe du 
+						Titanic. Nous devions pour modéliser la base de données, utiliser des outils comme l'UML et le format 
+						Schema Entity Association pour la représenter. Malhereusement, cette étape n'a pas pu directement être 
+						implémantée dans la base de donnée du aux nombreuses solutions différentes. Finalement, nous devions 
+						interroger les données fournies pour répondre à des questions dur les naufragés du Titanic.</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
 			</section>
@@ -93,6 +111,7 @@
 				<h3>Analyse et création d'un site de présentation d'une entreprise</h3>
 				<hr>
 				<div class="projectContent">
+					<h4>(2022 - 2023)</h4>
 					<p>Pas encore rédigé ...</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
@@ -107,6 +126,35 @@
 				<h3>Création d'une application lourde de gestion d'évènement en JavFX</h3>
 				<hr>
 				<div class="projectContent">
+					<h4>(2023)</h4>
+					<p>Pas encore rédigé ...</p>
+					<a target="_blank" href="404/404.html" class="projectButton">button</a>
+				</div>
+			</section>
+		</div>
+
+		<div class="box">
+			<section class="projet">
+				<input type="checkbox" id="S22" class="check">
+				<label for="S22" class="button"></label>
+				<h3>Exploitation d'une base de données pour produire des statistiques</h3>
+				<hr>
+				<div class="projectContent">
+					<h4>(2023)</h4>
+					<p>Pas encore rédigé ...</p>
+					<a target="_blank" href="404/404.html" class="projectButton">button</a>
+				</div>
+			</section>
+		</div>
+
+		<div class="box">
+			<section class="projet">
+				<input type="checkbox" id="S23" class="check">
+				<label for="S23" class="button"></label>
+				<h3>Installation d'un poste doté de services réseaux et d'une BDD</h3>
+				<hr>
+				<div class="projectContent">
+					<h4>(2023)</h4>
 					<p>Pas encore rédigé ...</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
@@ -121,11 +169,13 @@
 				<h3>Création d'un Serious Game educatif</h3>
 				<hr>
 				<div class="projectContent">
+					<h4>(2023 - 2024)</h4>
 					<p>Pas encore rédigé ...</p>
 					<a target="_blank" href="404/404.html" class="projectButton">button</a>
 				</div>
 			</section>
-		</div>
+		</div> 
+		
 	</main>
 
 
@@ -136,6 +186,16 @@
 		</div>
 		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/-->
 	</footer>
+
+	<script>
+		var doc = '{"projects": [{"name": "Projets personnels","list": [{"title":"Projet de scrabble duplicate web monopage","start":"2023","end":"now","description":"Ce projet est motivé par ma mère qui aimerais pouvoir jouer au scrabble duplicate avec ses élèves lors de remplacement quand le contexte s\'y prète. Hébergant mon projet sur GitHub pages, je n\'ai donc pas accès au PHP pour passer les informations entre des pages ou même pour effectuer les calculs du jeu. J\'ai donc du créer ce site en une seule page HTML accompagnée de JavaScript pour tout les calculs et les différentes scènes du site. Ce projet est donc un défis pour moi apprenant tout juste le JavaScript. Je me heurte donc à des difficultés sur lesquelles je peut passer plusieurs jours pour les régler du à mon manque de connaissances en JavaScript.","links":[{"content":"Jouer au scrabble","target":"/404/404.html"}]}]},{"name": "BUT semestre 1","list": [{"title":"Projet de classification automatique de dépêches en Java","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]},{"title":"Installation d\'un poste de travail sous linux","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]},{"title":"Création d\'une base de données PostgreSQL","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]},{"title":"Analyse et création d\'un site de présentation d\'une entreprise","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]}]},{"name": "BUT semestre 2","list": [{"title":"Création d\'une application lourde de gestion d\'évènement en JavFX","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]}]},{"name": "BUT semestre 3","list": [{"title":"Création d\'un Serious Game educatif","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]}]},{"name": "BUT semestre 4","list": [{"title":"","start":"","end":"","description":"Pas encore rédigé :(","links":[{"content":"A venir...","target":"/404/404.html"}]}]}]}'
+		var json = $.parseJSON(doc);
+		// var json = $.getJSON('Content.json');
+		for (var i=0; i<json.length; i++){
+			$('main').append($('<h2/>',{text:json.projects[i].name}));
+		}
+		
+	</script>
 </body>
 
 </html>
