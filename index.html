@@ -19,41 +19,228 @@
 
 		</aside>
 		<nav>
-			<a href="index.html">Accueil</a>
-			<a href="Projets.html">Mes Projets</a>
-			<a href="Parcours.html">Parcours</a>
+			<a class="navBtn" id="indexBtn">Accueil</a>
+			<a class="navBtn" id="projetsBtn">Mes Projets</a>
+			<a class="navBtn" id="parcoursBtn">Parcours</a>
+		
+			<script>
+				const elements = document.getElementsByClassName('navBtn');
+
+				for (let i = 0; i < elements.length; i++) {
+					elements[i].addEventListener('animationend', function(e) {
+						elements[i].classList.remove('blink');
+						elements[i].classList.remove('fly');
+					});
+
+					elements[i].addEventListener('mouseover', function(e) {
+						elements[i].classList.add('blink')
+					})
+
+					elements[i].addEventListener('click', function(e) {
+						elements[i].classList.add('fly')
+					})
+				}
+			</script>
+		
 		</nav>
 	</header>
 
 
 	<main>
-		<h1>Main</h1>
-		<h2>Qui suis-je</h2>
-		<div class="box">
-			<!-- <p>Je suis Ethan Hermil, je suis plutot renfermé mais j'essaye quand même de sociabiliser avec les personnes
-				que je vois régulièrement. Mais je ne vous mangerai pas</p>  -->
-			<p>Je suis Ethan Hermil, je suis pas mal renfermé mais j'arrive petit à petit à sortir de ma carapace qui m'isole des rencontres et sorties hors 
-				professionelles (ce que je trouve bien mieux que de rester seul tout mon temps libre). En revanche, une fois que l'on me connaît, je suis très amical.</p>
+		<section id="index">
+			<h1>Main</h1>
+			<h2>Qui suis-je</h2>
+			<div class="box">
+				<!-- <p>Je suis Ethan Hermil, je suis plutot renfermé mais j'essaye quand même de sociabiliser avec les personnes
+					que je vois régulièrement. Mais je ne vous mangerai pas</p>  -->
+				<p>Je suis Ethan Hermil, je suis pas mal renfermé mais j'arrive petit à petit à sortir de ma carapace qui m'isole des rencontres et sorties hors 
+					professionelles (ce que je trouve bien mieux que de rester seul tout mon temps libre). En revanche, une fois que l'on me connaît, je suis très amical.</p>
+	
+				<p>Actuellement en 2<sup>ème</sup> année de BUT informatique, je m'intéresse principalement au développement
+					web et le développement d'applications. J'essaye d'apprendre et de m'améliorer en permanence pour donner
+					un travail de mieux en mieux.</p>
+				<p>Je m'intéresse aussi aux environnements Linux et aux divers outils liés. Mais aussi au domaine des bases de données que je trouve intéressant.</p>
+	
+	
+			</div>
+	
+			<h2>Hobbies</h2>
+			<div class="box">
+				<p>Doctor Who est une passion pour moi, j'adore cette série, j'ai vu l'intégralité de la série moderne et je
+					regarde petit à petit la série classique en ce moment.</p>
+	
+				<p>J'apprécie aussi beaucoup les jeux vidéos, je n'aime pas vraiment les jeux de pvp ou die and retry mais à
+					part ça je peut apprécier beaucoup de jeux.</p>
+	
+				<p>Mais j'aime aussi développer des choses avec des technologies web, pour repousser mes limites et mes
+					connaissances.</p>
+			</div>
+		</section>
 
-			<p>Actuellement en 2<sup>ème</sup> année de BUT informatique, je m'intéresse principalement au développement
-				web et le développement d'applications. J'essaye d'apprendre et de m'améliorer en permanence pour donner
-				un travail de mieux en mieux.</p>
-			<p>Je m'intéresse aussi aux environnements Linux et aux divers outils liés. Mais aussi au domaine des bases de données que je trouve intéressant.</p>
+
+		<section id="projets">
+			<h1>Mes Projets</h1>
+			<h2>Projets personnels</h2>
+			<div class="box">
+				<section class="projet">
+					<input type="checkbox" id="P1" class="check">
+					<label for="P1" class="button"></label>
+					<h3>Projet de scrabble duplicate web monopage</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023 - Maintenant)</h4>
+						<p>
+							Ce projet est motivé par ma mère qui aimerais pouvoir jouer au scrabble duplicates avec ses
+							élèves lors de remplacement quand le contexte s'y prète. Hébergant mon projet sur GitHub pages,
+							je n'ai donc pas accès au PHP pour passer les informations entre des pages ou même pour
+							effectuer les calculs du jeu. J'ai donc du créer ce site en une seule page HTML accompagnée de
+							JavaScript pour tout les calculs et les différentes scènes du site. Ce projet est donc un défis
+							pour moi apprenant tout juste le JavaScript. Je me heurte donc à des difficultés sur lesquelles
+							je peut passer plusieurs jours pour les régler du à mon manque de connaissances en JavaScript.
+						</p>
+						<a target="_blank" href="404/404.html" class="projectButton">Jouer au scrabble</a>
+					</div>
+				</section>
+			</div>
+
+			<h2>BUT semestre 1</h2>
+			<div class="box">
+				<section class="projet">
+					<input type="checkbox" id="S11" class="check">
+					<label for="S11" class="button"></label>
+					<h3>Projet de classification automatique de dépêches en Java</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023)</h4>
+						<p>Ce projet consistais en binômes, de créer un programme Java permettant de trier de courtes 
+							dépècges selon certaines catégories. Pour celà, nous avons du créer des listes de mots correspondant 
+							à chaque catégorie et assigner un score (poid) à chaque mot dans la catégorie en fonction de son 
+							appartenance et à sa précision sur le sujet. Par exemple, dans la catégorie science, le mot 'atome' 
+							aurais eu un poid fort contrairement au mot 'je'. Nous devions le faire premièrement à la main, puis 
+							nous devions automatiser le processus de tri des dépèches et d'ajustement des valeures pour avoir un 
+							taux de réussite le plus haut possible</p>
+					</div>
+				</section>
+
+				<section class="projet">
+					<input type="checkbox" id="S12" class="check">
+					<label for="S12" class="button"></label>
+					<h3>Installation d'un poste de travail sous linux</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2022)</h4>
+						<p>Durant ce court projet, nous devions simplement installer Debian sur une machine virtuelle ainsi que 
+							tous les outils nescessaires pour développer en Java. Ce projet étais ma première installation d'un 
+							poste de travail sous linux tout en faisant une carte mentale récapitulant le processus d'installation 
+							pour quelqu'un qui ne s'y connait pas. Mais ce n'est pas ma dernière (bien au contraire)</p>
+					</div>
+				</section>
+
+				<section class="projet">
+					<input type="checkbox" id="S13" class="check">
+					<label for="S13" class="button"></label>
+					<h3>Création d'une base de données PostgreSQL</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2022)</h4>
+						<p>Nous devions en binômes, modéliser et créer une base de données PostgreSQL sur le thème de naufrahe du 
+							Titanic. Nous devions pour modéliser la base de données, utiliser des outils comme l'UML et le format 
+							Schema Entity Association pour la représenter. Malhereusement, cette étape n'a pas pu directement être 
+							implémantée dans la base de donnée du aux nombreuses solutions différentes. Finalement, nous devions 
+							interroger les données fournies pour répondre à des questions dur les naufragés du Titanic.</p>
+					</div>
+				</section>
+
+				<section class="projet">
+					<input type="checkbox" id="S14" class="check">
+					<label for="S14" class="button"></label>
+					<h3>Analyse et création d'un site de présentation d'une entreprise</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2022 - 2023)</h4>
+						<p>Rédaction en cours ;)</p>
+					</div>
+				</section>
+			</div>
+
+			<h2>BUT semestre 2</h2>
+			<div class="box">
+				<section class="projet">
+					<input type="checkbox" id="S21" class="check">
+					<label for="S21" class="button"></label>
+					<h3>Création d'une application lourde de gestion d'évènement en JavFX</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023)</h4>
+						<p>Rédaction en cours ;)</p>
+					</div>
+				</section>
+
+				<section class="projet">
+					<input type="checkbox" id="S22" class="check">
+					<label for="S22" class="button"></label>
+					<h3>Exploitation d'une base de données pour produire des statistiques</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023)</h4>
+						<p>Rédaction en cours ;)</p>
+					</div>
+				</section>
+				
+				<section class="projet">
+					<input type="checkbox" id="S23" class="check">
+					<label for="S23" class="button"></label>
+					<h3>Installation d'un poste doté de services réseaux et d'une BDD</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023)</h4>
+						<p>Rédaction en cours ;)</p>
+					</div>
+				</section>
+			</div>
+
+			<h2>BUT semestre 3</h2>
+			<div class="box">
+				<section class="projet">
+					<input type="checkbox" id="S31" class="check">
+					<label for="S31" class="button"></label>
+					<h3>Création d'un Serious Game educatif</h3>
+					<hr>
+					<div class="projectContent">
+						<h4>(2023 - 2024)</h4>
+						<p>Rédaction en cours ;)</p>
+					</div>
+				</section>
+			</div> 
+		</section>
 
 
-		</div>
+		<section id="parcours">
+			<h1>Mon parcours</h1>
 
-		<h2>Hobbies</h2>
-		<div class="box">
-			<p>Doctor Who est une passion pour moi, j'adore cette série, j'ai vu l'intégralité de la série moderne et je
-				regarde petit à petit la série classique en ce moment.</p>
-
-			<p>J'apprécie aussi beaucoup les jeux vidéos, je n'aime pas vraiment les jeux de pvp ou die and retry mais à
-				part ça je peut apprécier beaucoup de jeux.</p>
-
-			<p>Mais j'aime aussi développer des choses avec des technologies web, pour repousser mes limites et mes
-				connaissances.</p>
-		</div>
+			<h2>Mes objectifs</h2>
+			<div class="box">
+				<p>J'aimerais dans l'avenir me tourner dans le développement web mais je ne suis absolument pas un designeur
+					pour autant. (Comme vous l'avez surement remarqué en regardant ce portfolio)</p>
+				<p>Aimant le domaine de l'informatique, je vise un job dans ce domaine qui ma plait et dans lequel je me sent bien.</p>
+			</div>
+	
+			<h2>BUT Informatique - IUT2 Grenoble, 2 place Doyen Gosse</h2>
+			<div class="box">
+				<h3>(2022 - Maintenant)</h3>
+				<p>Parcours A: Développement d'applications</p>
+			</div>
+	
+			<h2>Lycée Général - Bourgoin-Jallieu / La Côte Saint André</h2>
+			<div class="box">
+				<h3>(2020 - 2022)</h3>
+				<p>Terminale générale: options SI, NSI, Maths</p>
+				<p>Première générale: options NSI, Maths</p>
+	
+				<h3>(2019-2020)</h3>
+				<p>Seconde générale: option SI et LV3 Italien</p>
+			</div>
+		</section>
 	</main>
 
 
@@ -65,5 +252,36 @@
 		<!--/\/\/\/\/\/\/\/\/\/\/\/\/\/\/-->
 	</footer>
 </body>
+
+<script>
+
+	let index = document.querySelector("section#index");
+	let projets = document.querySelector("section#projets");
+	let parcours = document.querySelector("section#parcours");
+
+	function afficherIndex() {
+		projets.style.display = "none";
+		parcours.style.display = "none";
+		index.style.display = "block";
+	}
+
+	function afficherProjets() {
+		index.style.display = "none";
+		parcours.style.display = "none";
+		projets.style.display = "block";
+	}
+
+	function afficherParcours() {
+		index.style.display = "none";
+		projets.style.display = "none";
+		parcours.style.display = "block";
+	}
+
+	document.querySelector("#parcoursBtn").addEventListener('click', afficherParcours);
+	document.querySelector("#projetsBtn").addEventListener('click', afficherProjets);
+	document.querySelector("#indexBtn").addEventListener('click', afficherIndex);
+
+	
+</script>
 
 </html>
