@@ -7,8 +7,8 @@
 					"title":"Projet de scrabble duplicate web monopage",
 					"start":"2023",
 					"end":"now",
-					"description":"Ce projet est motivé par ma mère qui aimerais pouvoir jouer au scrabble duplicates avec ses élèves lors de remplacement quand le contexte s'y prète. Hébergant mon projet sur GitHub pages, je n'ai donc pas accès au PHP pour passer les informations entre des pages ou même pour effectuer les calculs du jeu. je dois donc créer ce site en une seule page HTML accompagnée de JavaScript pour tout les calculs et les différentes scènes du site. Ce projet est donc un défis pour moi apprenant tout juste le JavaScript. Je me heurte donc à des difficultés sur lesquelles je peut passer plusieurs jours pour les régler du à mon manque de connaissances en JavaScript.",
-					"role":"Ce projet me permet d'améliorer mes compétences en JavaScript mais met aussi me permet de travailler sur un projet ne venant pas de moi ou de ma formation.",
+					"description":"Ce projet est motivé par ma mère qui aimerait pouvoir jouer au scrabble duplicate avec ses élèves lors de remplacement quand le contexte s'y prête. Hébergeant mon projet sur GitHub pages, je n'ai donc pas accès au PHP pour passer les informations entre des pages ou même pour effectuer les calculs du jeu. J'ai donc dû créer ce site en une seule page HTML accompagnée de JavaScript pour tous les calculs et les différentes scènes du site. Ce projet est donc un défi pour moi, apprenant tout juste le JavaScript. Je me heurte donc à des difficultés sur lesquelles je peux passer plusieurs jours pour les régler dû à mon manque de connaissances en JavaScript.",
+					"role":"Ce projet me permet d'améliorer mes compétences en JavaScript, mais il me permet aussi de travailler sur un projet ne venant pas de moi ou de ma formation.",
 					"bilan":"",
 					"links":[
 						{
@@ -26,16 +26,16 @@
 					"title":"Projet de classification automatique de dépêches en Java",
 					"start":"2023",
 					"end":"2023",
-					"description":"Ce projet consistais en binômes, de créer un programme Java permettant de trier de courtes dépèches selon certaines catégories. Pour celà, nous avons du créer des listes de mots correspondant à chaque catégorie et assigner un score (poid) à chaque mot dans la catégorie en fonction de son appartenance et à sa précision sur le sujet. Par exemple, dans la catégorie science, le mot 'atome' aurais eu un poid fort contrairement au mot 'je'. Nous devions le faire premièrement à la main, puis nous devions automatiser le processus de tri des dépèches et d'ajustement des valeures pour avoir un taux de réussite le plus haut possible.",
-					"role":"Étant en binômes, et le projet n'étant qu'un projet en CLI (Command Line Interface), nous avons souvent travaillé sur les mêmes choses en améliorant ce que l'autre avais fais.",
+					"description":"Ce projet consistait, en binômes, de créer un programme Java permettant de trier de courtes dépêches selon certaines catégories. Pour cela, nous avons dû créer des listes de mots correspondant à chaque catégorie et assigner un score (poids) à chaque mot dans la catégorie en fonction de son appartenance et à sa précision sur le sujet. Par exemple, dans la catégorie science, le mot 'atome' aurait eu un poids fort contrairement au mot 'je'. Nous devions le faire premièrement à la main, puis nous devions automatiser le processus de tri des dépêches et d'ajustement des valeurs pour avoir un taux de réussite le plus haut possible.",
+					"role":"Étant en binômes, et le projet n'étant qu'un projet en CLI (Command Line Interface), nous avons souvent travaillé sur les mêmes choses en améliorant ce que l'autre avait fait.",
 					"bilan":"",
 					"links":[]
 				},
 				{
-					"title":"Installation d'un poste de travail sous linux",
+					"title":"Installation d'un poste de travail sous Linux",
 					"start":"2022",
 					"end":"2022",
-					"description":"Durant ce court projet, nous devions simplement installer Debian sur une machine virtuelle ainsi que tous les outils nescessaires pour développer en Java. Ce projet étais ma première installation d'un poste de travail sous linux tout en faisant une carte mentale récapitulant le processus d'installation pour quelqu'un qui ne s'y connait pas. Mais ce n'est pas ma dernière (bien au contraire)",
+					"description":"Durant ce court projet, nous devions simplement installer Debian sur une machine virtuelle ainsi que tous les outils nécessaires pour développer en Java. Ce projet était ma première installation d'un poste de travail sous Linux tout en faisant une carte mentale récapitulant le processus d'installation pour quelqu'un qui ne s'y connait pas. Mais ce n'est pas ma dernière (bien au contraire).",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -44,7 +44,7 @@
 					"title":"Création d'une base de données PostgreSQL",
 					"start":"2022",
 					"end":"2022",
-					"description":"Nous devions en binômes, modéliser et créer une base de données PostgreSQL sur le thème de naufrahe du Titanic. Nous devions pour modéliser la base de données, utiliser des outils comme l'UML et le format Schema Entity Association pour la représenter. Malhereusement, cette étape n'a pas pu directement être implémantée dans la base de donnée du aux nombreuses solutions différentes. Finalement, nous devions interroger les données fournies pour répondre à des questions dur les naufragés du Titanic.",
+					"description":"Nous devions, en binômes, modéliser et créer une base de données PostgreSQL sur le thème du naufrage du Titanic. Nous devions, pour modéliser la base de données, utiliser des outils comme l'UML et le format Schema Entity Association pour la représenter. Malheureusement, cette étape n'a pas pu directement être implémentée dans la base de donnée dû aux nombreuses solutions différentes. Finalement, nous devions interroger les données fournies pour répondre à des questions sur les naufragés du Titanic.",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -53,7 +53,7 @@
 					"title":"Analyse et création d'un site de présentation d'une entreprise",
 					"start":"2022",
 					"end":"2023",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -64,10 +64,10 @@
 			"name": "BUT semestre 2",
 			"list": [
 				{
-					"title":"Création d'une application lourde de gestion d'évènement en JavFX",
+					"title":"Création d'une application lourde de gestion d'événements en JavFX",
 					"start":"2023",
 					"end":"2023",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -76,7 +76,7 @@
 					"title":"Exploitation d'une base de données pour produire des statistiques",
 					"start":"2023",
 					"end":"2023",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -85,7 +85,7 @@
 					"title":"Installation d'un poste doté de services réseaux et d'une BDD",
 					"start":"2023",
 					"end":"2023",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -96,19 +96,19 @@
 			"name": "BUT semestre 3",
 			"list": [
 				{
-					"title":"Game jam en python",
+					"title":"Game jam en Python",
 					"start":"2023",
 					"end":"22023",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
 				},
 				{
-					"title":"Création d'un Serious Game educatif",
+					"title":"Création d'un Serious Game éducatif",
 					"start":"2023",
 					"end":"2024",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -122,7 +122,7 @@
 					"title":"Mini projet: Développement d'une application simple en Android",
 					"start":"2024",
 					"end":"2024",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -131,7 +131,7 @@
 					"title":"Mini projet: Développement d'un site web d'achat en ligne avec Symfony",
 					"start":"2024",
 					"end":"2024",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
@@ -140,7 +140,7 @@
 					"title":"Mini projet: Développement d'une application web JavaScript appelant une API publique",
 					"start":"2024",
 					"end":"2024",
-					"description":"Pas encore rédigé :(",
+					"description":"Rédaction en cours ;)",
 					"role":"",
 					"bilan":"",
 					"links":[]
