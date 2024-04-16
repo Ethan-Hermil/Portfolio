@@ -13,7 +13,7 @@
 					"links":[
 						{
 							"content":"Jouer au scrabble",
-							"target":"/404/404.html"
+							"target":"./404/404.html"
 						}
 					]
 				}
