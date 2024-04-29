@@ -49,27 +49,7 @@
 	<main>
 		<section id="index">
 			<h1>Main</h1>
-			<h2>Qui suis-je</h2>
-			<div class="box">	
-				<p>Actuellement en 2<sup>ème</sup> année de BUT informatique, je m'intéresse principalement au développement
-					web et le développement d'applications. J'essaye d'apprendre et de m'améliorer en permanence pour donner
-					un travail de mieux en mieux.</p>
-				<p>Je m'intéresse aussi aux environnements Linux et aux divers outils liés. Mais aussi au domaine des bases de données que je trouve intéressant.</p>
-	
-	
-			</div>
-	
-			<h2>Hobbies</h2>
-			<div class="box">
-				<p>Doctor Who est une passion pour moi, j'adore cette série, j'ai vu l'intégralité de la série moderne et je
-					regarde petit à petit la série classique en ce moment.</p>
-	
-				<p>J'apprécie aussi beaucoup les jeux vidéos, je n'aime pas vraiment les jeux de pvp ou die and retry mais à
-					part ça je peut apprécier beaucoup de jeux.</p>
-	
-				<p>Mais j'aime aussi développer des choses avec des technologies web, pour repousser mes limites et mes
-					connaissances.</p>
-			</div>
+			<!-- Section remplie au chargement de la page -->
 		</section>
 
 
@@ -81,29 +61,7 @@
 
 		<section id="parcours">
 			<h1>Mon parcours</h1>
-
-			<h2>Mes objectifs</h2>
-			<div class="box">
-				<p>J'aimerais dans l'avenir me tourner dans le développement web mais je ne suis absolument pas un designeur
-					pour autant. (Comme vous l'avez surement remarqué en regardant ce portfolio)</p>
-				<p>Aimant le domaine de l'informatique, je vise un job dans ce domaine qui ma plait et dans lequel je me sent bien.</p>
-			</div>
-	
-			<h2>BUT Informatique - IUT2 Grenoble, 2 place Doyen Gosse</h2>
-			<div class="box">
-				<h3>(2022 - Maintenant)</h3>
-				<p>Parcours A: Développement d'applications</p>
-			</div>
-	
-			<h2>Lycée Général - Bourgoin-Jallieu / La Côte Saint André</h2>
-			<div class="box">
-				<h3>(2020 - 2022)</h3>
-				<p>Terminale générale: options SI, NSI, Maths</p>
-				<p>Première générale: options NSI, Maths</p>
-	
-				<h3>(2019-2020)</h3>
-				<p>Seconde générale: option SI et LV3 Italien</p>
-			</div>
+			<!-- Section remplie au chargement de la page -->
 		</section>
 	</main>
 
@@ -147,12 +105,37 @@
 
 
 	function initPages(file) {
+		let indexBox = document.querySelector('#index');
 		let projetsBox = document.querySelector('#projets');
+		let parcoursBox = document.querySelector('#parcours');
+
+		let fileIndex = file.index;
+		//boucle pour les grandes sections
+		fileIndex.forEach(element => {
+			//Titre de la section
+			let h2 = document.createElement('h2');
+			h2.textContent = element.name;
+			indexBox.appendChild(h2);
+
+			let divBox = document.createElement('div');
+			divBox.setAttribute('class', 'box');
+			indexBox.appendChild(divBox);
+
+			//boucle pour tous les textes de la section
+			element.list.forEach(text => {
+				let p = document.createElement('p');
+				p.innerHTML = text.text;
+				divBox.appendChild(p);
+			});
+		});
+
+
 
 		let id = 1;
 		let fileProjects = file.projects;
 		//boucle pour les grandes catégories
 		fileProjects.forEach(element => {
+			//Titre de la catégorie
 			let h2 = document.createElement('h2');
 			h2.textContent = element.name;
 			projetsBox.appendChild(h2);
@@ -224,11 +207,37 @@
 					button.textContent = btn.content;
 					divContent.appendChild(button);
 				});
-
 			});
-
-			
 		});
+
+		let fileParcours = file.parcours;
+		//boucle pour les grandes sections
+		fileParcours.forEach(element => {
+			//Titre de la section
+			let h2 = document.createElement('h2');
+			h2.textContent = element.name;
+			parcoursBox.appendChild(h2);
+
+			let divBox = document.createElement('div');
+			divBox.setAttribute('class', 'box');
+			parcoursBox.appendChild(divBox);
+
+			//boucle pour tous les textes de la section
+			element.list.forEach(list => {
+				if (list.start != null && list.end != null) {
+					let h3 = document.createElement('h3');
+					h3.textContent = "( " + list.start + " - " + list.end + " )";
+					divBox.appendChild(h3);
+				}
+
+				list.texts.forEach(text => {
+					let p = document.createElement('p');
+					p.innerHTML = text.text;
+					divBox.appendChild(p);
+				});
+			});
+		});
+
 	}
 
 

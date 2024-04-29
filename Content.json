@@ -1,4 +1,31 @@
 {
+	"index": [
+		{
+			"name": "Qui suis-je",
+			"list": [
+				{
+					"text": "Actuellement en 2<sup>ème</sup> année de BUT informatique, je m'intéresse principalement au développement web et le développement d'applications. J'essaye d'apprendre et de m'améliorer en permanence pour donner un travail de mieux en mieux."
+				},
+				{
+					"text": "Je m'intéresse aussi aux environnements Linux et aux divers outils liés. Mais aussi au domaine des bases de données que je trouve intéressant."
+				}
+			]
+		},
+		{
+			"name": "Hobbies",
+			"list": [
+				{
+					"text": "Doctor Who est une passion pour moi, j'adore cette série, j'ai vu l'intégralité de la série moderne et je regarde petit à petit la série classique en ce moment."
+				},
+				{
+					"text": "J'apprécie aussi beaucoup les jeux vidéos, je n'aime pas vraiment les jeux de pvp ou die and retry mais à part ça je peut apprécier beaucoup de jeux."
+				},
+				{
+					"text": "Mais j'aime aussi développer des choses avec des technologies web, pour repousser mes limites et mes connaissances."
+				}
+			]
+		}
+	],
 	"projects": [
 		{
 			"name": "Projets personnels",
@@ -148,6 +175,60 @@
 			]
 		}
 		
+	],
+	"parcours": [
+		{
+			"name": "Mes objectifs",
+			"list": [
+				{
+					"texts": [
+						{
+							"text": "BUT Informatique - IUT2 Grenoble, 2 place Doyen GosseJ'aimerais dans l'avenir me tourner dans le développement web mais je ne suis absolument pas un designeur pour autant. (Comme vous l'avez surement remarqué en regardant ce portfolio)"	
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "BUT Informatique - IUT2 Grenoble, 2 place Doyen Gosse",
+			"list": [
+				{
+					"start" : "2022",
+					"end": "Maintenant",
+					"texts": [
+						{
+							"text": "Parcours A: Développement d'applications"	
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lycée Général - Bourgoin-Jallieu / La Côte Saint André",
+			"list": [
+				{
+					"start" : "2020",
+					"end": "2022",
+					"texts": [
+						{
+							"text": "Terminale générale: options SI, NSI, Maths"	
+						},
+						{
+							"text": "Première générale: options NSI, Maths"	
+						}
+					]
+				},
+				{
+					"start" : "2019",
+					"end": "2020",
+					"texts": [
+						{
+							"text": "Seconde générale: option SI et LV3 Italien"	
+						}
+					]
+				}
+			]
+		}
 	]
 }
 
