@@ -222,6 +222,32 @@ footer {
 	padding: 5px 10px;
 }
 
+h4 {
+	font-size: 125%;
+	padding-left: 1.5em;
+	margin: 1em 0 0 0;
+}
+
+.contact {
+	width: 50%;
+	margin-left: 2em;
+	padding: 1em;
+	border-left: 2px solid darkslategray;
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	padding-top: 0.5em;
+}
+
+.flex-row>div:not(:first-of-type) {
+	padding-left: 0.5em;
+}
+
+.flex-row p {
+	margin: 0;
+}
 
 
 
