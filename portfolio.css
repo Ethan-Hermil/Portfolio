@@ -119,9 +119,9 @@ img {
 }
 
 @keyframes fly {
-	from { rotate: 0deg; }
-	50%	{ transform: scale(50%); opacity: 10%; }
-	to { rotate: 720deg; }
+	from { transform: scale(100%); }
+	40%	{ transform: scale(50%); opacity: 10%; }
+	to { rotate: 0deg; }
 }
 
 .fly {
