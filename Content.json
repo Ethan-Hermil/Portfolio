@@ -15,7 +15,7 @@
 			"name": "Hobbies",
 			"list": [
 				{
-					"text": "J'adore la série Doctor Who, je pourrais en parler pendant bien trop longtemps. Mais en résumé, c'est une super série avec plus de 60ans d'histoire et d'évolution donnant un résultat superbe."
+					"text": "J'apprécie la série Doctor Who, je pourrais en parler pendant bien trop longtemps. Mais en résumé, c'est une super série avec plus de 60ans d'histoire et d'évolution donnant un résultat superbe."
 				},
 				{
 					"text": "J'apprécie aussi beaucoup les jeux vidéos, même si je préfère les jeux calmes sans compétition."
@@ -80,9 +80,9 @@
 					"title":"Analyse et création d'un site de présentation d'une entreprise",
 					"start":"2022",
 					"end":"2023",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Ce projet était composé de deux parties : l'analyse de l'entreprise et le développement d'un site statique présentant cette entreprise, comme par exemple son domaine d'activité, ses clients, son impact environnemental.",
+					"role":"Durant la première partie du projet, nous fûmes tous des recherches. Puis, durant la seconde partie du projet, je m'occupais principalement de la mise en forme des informations, de la cohérence des pages et de la vérification de la conformité du code.",
+					"bilan":"Ce projet était intéressant, car il m'a permis de faire du développement web en large groupe, mais aussi d'en apprendre plus sur l'entreprise que nous avions choisie.",
 					"links":[]
 				}
 			]
@@ -94,9 +94,9 @@
 					"title":"Création d'une application lourde de gestion d'événements en JavFX",
 					"start":"2023",
 					"end":"2023",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Ce projet avait pour objectif de créer une application de bureau permettant la gestion d'un type d'évènement. L'évènement choisi par notre groupe était les tournois e-sports.",
+					"role":"Durant ce projet, j'étais principalement chargé des interfaces et de la création des formulaires.",
+					"bilan":"Étant un grand groupe, les tâches étaient réparties selon les préférences et les compétences de chacun. Cependant, ce projet m'a permis d'apprendre à utiliser JavaFX pour créer des applications.",
 					"links":[]
 				},
 				{
@@ -112,9 +112,9 @@
 					"title":"Installation d'un poste doté de services réseaux et d'une BDD",
 					"start":"2023",
 					"end":"2023",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Ce projet consistait à mettre en place un poste de travail sous Linux contenant une base de données totalement fonctionnelle et des services réseaux permettant d'y accéder.",
+					"role":"Ce projet étant un projet en solo, l'installation de ce poste a entièrement été faite par moi.",
+					"bilan":"Ce projet était similaire à l'installation du premier semestre, avec des étapes en plus.",
 					"links":[]
 				}
 			]
@@ -123,21 +123,21 @@
 			"name": "BUT semestre 3",
 			"list": [
 				{
-					"title":"Game jam en Python",
+					"title":"Game Jam en Python",
 					"start":"2023",
 					"end":"22023",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Cette Game Jam était réalisée en groupes et nous devions créer en une semaine un jeu sur un thème choisi par le corps enseignant.",
+					"role":"Étant dans un petit groupe, nous avons tous participé à tout, nous permettant d'avoir plusieurs solutions à un problème et de voir plus facilement les erreurs tout en ayant participé à tous les aspects du jeu.",
+					"bilan":"Cette Game Jam m'a permis de programmer à nouveau en Python pour une semaine. Cependant, Pygame n'est pas simple à comprendre même après cet exercice.",
 					"links":[]
 				},
 				{
 					"title":"Création d'un Serious Game éducatif",
 					"start":"2023",
 					"end":"2024",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"En groupes assez larges, nous devions choisir une matière pour laquelle nous devions créer un jeu éducatif permettant à de potentiels élèves d'apprendre en s'amusant.",
+					"role":"Notre jeu étant divisé en une partie jeux et une partie web pour voir l'évolution des élèves, j'ai participé principalement à la partie web contenant un lien de téléchargement et une visualisation de ses statistiques en plus de celles de ses élèves.",
+					"bilan":"Ce projet était un défi, car le sujet n'était pas très clair au début.",
 					"links":[]
 				}
 			]
@@ -149,27 +149,27 @@
 					"title":"Mini projet: Développement d'une application simple en Android",
 					"start":"2024",
 					"end":"2024",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Ce projet avait pour objectif de nous apprendre les bases des applications Android. Nous devions créer une application contenant de simples exercices comme des multiplications ou des questions, mais aussi une gestion locale de comptes pour séparer les résultats des différents utilisateurs.",
+					"role":"Étant un projet solo, l'application entière était réalisée par la même personne.",
+					"bilan":"Cet exercice était très efficace pour nous apprendre les bases et m'a donné envie d'approfondir mes connaissances.",
 					"links":[]
 				},
 				{
 					"title":"Mini projet: Développement d'un site web d'achat en ligne avec Symfony",
 					"start":"2024",
 					"end":"2024",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Ce projet avait pour objectif de nous apprendre les bases des sites web créés avec Symfony. Il s'agissait de créer un site fictif d'achat en ligne utilisant les différentes fonctions de Symphony.",
+					"role":"Étant un projet solo, le site a été réalisé par la même personne.",
+					"bilan":"J'ai trouvé cet exercice complexe, car ma compréhension de Symfony n'était pas super.",
 					"links":[]
 				},
 				{
 					"title":"Mini projet: Développement d'une application web JavaScript appelant une API publique",
 					"start":"2024",
 					"end":"2024",
-					"description":"Rédaction en cours ;)",
-					"role":"",
-					"bilan":"",
+					"description":"Dans le but de nous apprendre le JavaScript, nous devions, en binôme, créer un petit site permettant d'appeler une API publique et de visualiser les informations renvoyées.",
+					"role":"Étant un projet en binôme, nous avons participé à toutes les parties du projet.",
+					"bilan":"Ce projet était court, mais intéressant pour la compréhension de JavaScript et des API.",
 					"links":[]
 				}
 			]
