@@ -14,34 +14,23 @@
 			<img src="img/user.jpg" alt="User">
 			<div>
 				<h2>Ethan Hermil</h2>
-				<p>Etudiant en 2<sup>ème</sup> année de BUT informatique</p>
+				<p>Etudiant en 3<sup>ème</sup> année de BUT informatique</p>
 			</div>
 
 		</aside>
 		<nav>
-			<a class="navBtn" id="indexBtn">Accueil</a>
-			<a class="navBtn" id="projetsBtn">Mes Projets</a>
-			<a class="navBtn" id="parcoursBtn">Parcours</a>
-		
-			<script>
-				const elements = document.getElementsByClassName('navBtn');
-
-				for (let i = 0; i < elements.length; i++) {
-					elements[i].addEventListener('animationend', function(e) {
-						elements[i].classList.remove('blink');
-						elements[i].classList.remove('fly');
-					});
-
-					elements[i].addEventListener('mouseover', function(e) {
-						elements[i].classList.add('blink')
-					});
-
-					elements[i].addEventListener('click', function(e) {
-						elements[i].classList.add('fly')
-					});
-				}
-			</script>
-		
+			<button class="navBtn active" id="indexBtn">
+				Accueil
+				<tag>You are here</tag>
+			</button>
+			<button class="navBtn" id="projetsBtn">
+				Mes Projets
+				<tag>You are here</tag>
+			</button>
+			<button class="navBtn" id="parcoursBtn">
+				Parcours
+				<tag>You are here</tag>
+			</button>		
 		</nav>
 	</header>
 
@@ -74,7 +63,7 @@
 					<p>Mail:</p>
 				</div>
 				<div>
-					<p>Ethan.Hermil@etu.univ-grenoble-alpes.fr</p>
+					<p>ethan.hermil@laposte.net</p>
 				</div>
 			</div>
 			<div class="flex-row">
@@ -82,7 +71,7 @@
 					<p>Téléphone:</p>
 				</div>
 				<div>
-					<p>06 47 88 66 45</p>
+					<p>(+33) 06 47 88 66 45</p>
 				</div>
 			</div>
 		</div>
@@ -95,27 +84,48 @@
 	let projets = document.querySelector("section#projets");
 	let parcours = document.querySelector("section#parcours");
 
+	let indexBtn = document.querySelector("#indexBtn");
+	let projetsBtn = document.querySelector("#projetsBtn");
+	let parcoursBtn = document.querySelector("#parcoursBtn");
+
 	function afficherIndex() {
 		projets.style.display = "none";
+		projetsBtn.classList.remove('active');
+
 		parcours.style.display = "none";
+		parcoursBtn.classList.remove('active');
+
 		index.style.display = "block";
+		indexBtn.classList.add('active');
 	}
 
 	function afficherProjets() {
 		index.style.display = "none";
+		indexBtn.classList.remove('active');
+
 		parcours.style.display = "none";
+		parcoursBtn.classList.remove('active');
+
 		projets.style.display = "block";
+		projetsBtn.classList.add('active');
+
 	}
 
 	function afficherParcours() {
 		index.style.display = "none";
+		indexBtn.classList.remove('active');
+
 		projets.style.display = "none";
+		projetsBtn.classList.remove('active');
+
 		parcours.style.display = "block";
+		parcoursBtn.classList.add('active');
+
 	}
 
-	document.querySelector("#parcoursBtn").addEventListener('click', afficherParcours);
-	document.querySelector("#projetsBtn").addEventListener('click', afficherProjets);
-	document.querySelector("#indexBtn").addEventListener('click', afficherIndex);
+	indexBtn.addEventListener('click', afficherIndex);
+	projetsBtn.addEventListener('click', afficherProjets);
+	parcoursBtn.addEventListener('click', afficherParcours);
 
 
 	function initPages(file) {
