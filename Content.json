@@ -4,7 +4,7 @@
 			"name": "Qui suis-je",
 			"list": [
 				{
-					"text": "Actuellement en 3<sup>ème</sup> année de BUT informatique, je m'intéresse principalement au développement web et le développement d'applications. J'essaye d'apprendre et de m'améliorer en permanence pour donner un travail de mieux en mieux."
+					"text": "En sortie BUT informatique, je m'intéresse principalement au développement web et le développement d'applications. Je suis curieux et essaye toujours d'en apprendre plus pour produire le meilleur résultat possible."
 				},
 				{
 					"text": "Je m'intéresse aussi aux environnements Linux et aux divers outils liés. Mais aussi au domaine des bases de données que je trouve intéressant."
@@ -97,7 +97,7 @@
 				{
 					"title":"Game Jam en Python",
 					"start":"2023",
-					"end":"22023",
+					"end":"2023",
 					"description":"Cette Game Jam était réalisée en groupes et nous devions créer en une semaine un jeu sur un thème choisi par le corps enseignant.",
 					"role":"Étant dans un petit groupe, nous avons tous participé à tout, nous permettant d'avoir plusieurs solutions à un problème et de voir plus facilement les erreurs tout en ayant participé à tous les aspects du jeu.",
 					"bilan":"Cette Game Jam m'a permis de programmer à nouveau en Python pour une semaine. Cependant, Pygame n'est pas simple à comprendre même après cet exercice.",
@@ -145,6 +145,43 @@
 					"links":[]
 				}
 			]
+		},
+		{
+			"name": "But semestre 5 et 6",
+			"list": [
+				{
+					"title":"Projet: Développement d'une application d'aide à la prise en charge de personnes agées",
+					"start":"2024",
+					"end":"2025",
+					"description":"Ce projet consistait à créer une application permettant de faciliter et d'aider la gestion de personnes âgées ayant besoin d'assistence, de soins, ou d'attention particulière. Cette application étais destinée aux personnes autpurs de la personne âgée. Elle permet de gérer un planning, répartir des tâches parmis différents utilisateurs, avoir une liste de contacts, une gestion des documents (avec différentes versions), un résumé médical de la personne âgée. Nous avons réalisé ce projet avec Angular (front-end) et Python Fast API (back-end), les données étaient stockées dans une base SQL.",
+					"role":"Dans ce projet, j'étais assigné à des tâches concernant principalement le front-end, mais je devais par moments aider avec l'aspect back-end du projet.",
+					"bilan":"Ce projet long nous à permis d'améliorer nôtre organisation en tant que grande équipe, mais il à aussi permis à améliorer notre vision sur la faisabilité de tâches dans un temps imparti.",
+					"links":[]
+				}
+			]
+		},
+		{
+			"name": "Stages",
+			"list": [
+				{
+					"title":"Création d'une application de gestion de compétition équestre",
+					"start":"2024",
+					"end":"2024",
+					"description":"Ce stage de deuxième année, consistait à créer une application permettant de gérer les compétition équestres d'un centre équestre. Cette application devais permettre d'organiser des compétitions avec différentes épreuves et une liste de cavaliers. Elle davais aussi gérer le classement par épreuve et global, et générer une fiche de résumé à la fin de cette compétition.",
+					"role":"",
+					"bilan":"Ce stage m'a permis de découvrir de plus près le monde professionnel, et aussi de me rendre compte de mes points forts et mes faiblesses dans le développement.",
+					"links":[]
+				},
+				{
+					"title":"Création d'une preuve de concept, d'une interface web permettant d'intéragir avec un annuaire Samba AD",
+					"start":"2025",
+					"end":"2025",
+					"description":"Ce stage réalisé en troisième année, au sein du département informatique de la ville de Fontaine, avais comme objectif de réaliser une interface weeb permettant d'intéragir et de visualiser un annuaire Samba AD. Cette interface devais permettre de réaliser un maximum d'intéractione possible comme ajouter/modifier/supprimer un utilisateur ou groupe, les activer/désactiver, faire des recherches dans l'annuaire, ... .",
+					"role":"Pour réaliser cette interface, il m'a fallut installer un serveur Samba AD dans une machine virtuelle pouvant être intérogée depuis l'exterieure. J'ai choisi de réaliser cette interface en PHP, car il propose nativement des méthodes permettant la communication avec ce type d'annuaire (tout en étant régulier sur cette implémantation, contrairement à python qui offrait aussi une possibilité d'intéragit avec cet annuaire via une library), et y ait ajouté un routeur simple (SLIM), et un moteur de template (TWIG).",
+					"bilan":"Ce stage m'a permis d'en apprendre beaucoup sur le fonctionnement des annuaires Samba AD et LDAP, mais m'a aussi permis d'améliorer ma vision globale des projets et la priorisation des tâches, car ce projet devais se concentrer sur les fonctionnalitées principales en priorité.",
+					"links":[]
+				}
+			]
 		}
 		
 	],
@@ -166,7 +203,7 @@
 			"list": [
 				{
 					"start" : "2022",
-					"end": "Maintenant",
+					"end": "2025",
 					"texts": [
 						{
 							"text": "Parcours A: Développement d'applications"	
@@ -183,6 +220,9 @@
 					"end": "2022",
 					"texts": [
 						{
+							"text": "<h4>Bourgoin-Jallieu</h4>"	
+						},
+						{
 							"text": "Terminale générale: options SI, NSI, Maths"	
 						},
 						{
@@ -194,6 +234,9 @@
 					"start" : "2019",
 					"end": "2020",
 					"texts": [
+						{
+							"text": "<h4>La Côte Saint André</h4>"	
+						},
 						{
 							"text": "Seconde générale: option SI et LV3 Italien"	
 						}

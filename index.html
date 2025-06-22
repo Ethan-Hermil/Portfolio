@@ -74,6 +74,14 @@
 					<p>(+33) 06 47 88 66 45</p>
 				</div>
 			</div>
+			<div class="flex-row">
+				<div>
+					<p>Likedin:</p>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/ethan-hermil-a478062b5/" target="_blank">Ethan Hermil</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 </body>
@@ -206,7 +214,11 @@
 
 				//date
 				let h4 = document.createElement('h4');
-				h4.textContent = "(" + projet.start + " - " + projet.end + ")";
+				if (projet.start == projet.end) {
+					h4.textContent = "(" + projet.start + ")";
+				} else {
+					h4.textContent = "(" + projet.start + " - " + projet.end + ")";
+				}
 				divContent.appendChild(h4);
 
 				//texte
